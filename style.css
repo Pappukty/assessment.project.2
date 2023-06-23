@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: rgb(244, 176, 51);
+}
+
+#nav{
+  display: flex;
+  height: 60px;
+  padding: 0 40px;
+  background-color: #c4842f;
+}
+
+#logo{
+  display: flex;
+  align-items: flex-start;
+  width: 100px;
+  height: 50px;
+}
+
+h1{
+  margin: 0 0;
+  display: flex;
+  text-align: center;
+  color: rgb(22, 17, 17);
+}
+
+#inputArea{
+  display: flex;
+  width: 100%;
+  margin: 0 0;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+#inputBox{
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;;
+}
+
+input, textarea{
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  font-family: 'Shadows Into Semi Light', cursive;
+  border:none;
+  border-bottom: 2px solid rgb(218, 58, 58);
+  transition: border-bottom 0.4s ease-in-out;
+  outline:none;
+}
+
+::placeholder{
+  opacity: 0.5;
+}
+
+input{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+textarea{
+  resize:none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+input:focus, textarea:focus{
+  border-bottom: 2px solid #f34c4c;
+  
+}
+
+#add{
+  position: relative;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  top:-20px;
+  left:-20px;
+  padding-left: 9px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: rgb(30, 29, 29);
+  border: none;
+  margin: auto 5%;
+  background-color: #e12807;
+  align-self:flex-end;
+}
+
+#add:hover{
+  background-color: #d44242;
+  cursor: pointer;
+}
+
+#notesArea{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+.note{
+  display: flex;
+  padding: 5px;
+  width: 250px;
+  background-color: rgb(235, 222, 222);
+  height: 125px;
+  margin: 15px;
+  border: 2px solid rgb(56, 54, 54);
+  border-radius: 8px;
+  flex-flow: column;
+}
+
+.noteTitle{
+  display: flex;
+  height:30px;
+  width: 250px;
+  border-bottom: 2px solid rgba(240, 240, 240, 0.729);
+}
+
+.titletext{
+  display: flex;
+  width: 210px;
+  margin:0;
+  align-self: flex-start;
+  padding-left: 5px;;
+}
+.noteCont{
+  display: flex;
+  height:105px;
+  width: 250px;
+}
+
+.btn {
+  display: flex;
+  justify-self: right;
+  align-self: center;
+  padding: 7px 8px;
+  border:none; 
+  color: #ef1818; 
+  font-size: 20px; 
+  font-weight: 500;
+  cursor: pointer; 
+outline: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(242, 234, 234);
+  border-radius: 50%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: #ee0c0c;
+  background-color: #e8e6e1;
+  
+}
+
+h1, h3{
+  overflow: hidden;
+}
